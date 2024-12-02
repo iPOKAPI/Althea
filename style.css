@@ -1,0 +1,194 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.5s ease-out;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ffcccc 0%, #ff99cc 20%, #ff66b3 40%, #ff3399 60%, #ff99cc 80%,#ffcccc 100%);
+            animation: bg 20s linear infinite;
+            color: #333;
+        }
+
+        @keyframes bg {
+            0% {
+                background-position-x: 0; /* Start position */
+            }
+            100% {
+                background-position-x: 10000px; /* End position */
+            }
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            backdrop-filter: blur(10px); /* Blur effect */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Darker shadow for better visibility */
+            background-color: rgba(255, 20, 147, 0.7); /* Dark pink background with transparency */
+            overflow: hidden;
+        }
+        
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #ff1493;
+            color: #fff;
+        }
+
+        /* Main Header */
+        header {
+            height: 80vh;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            color: linear-gradient(to right, #ffffff 0%, #f9f9f9 20%, #f0f0f0 40%, #e0e0e0 60%, #d0d0d0 80%, #000 100%);
+            animation: txt 15s linear infinite; 
+            margin-top: 20%;
+            font-size: 4.5rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+        @keyframes txt {
+            0% {
+                background-position-x: 0; /* Start position */
+            }
+            100% {
+                background-position-x: 10000px; /* End position */
+            }
+        }
+
+        .section-title {
+            margin: 50px auto;
+            text-align: center;
+            font-size: 2.5rem;
+            color: #ff1493;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* About Section */
+        .about, .fs1, .resume, .seminars, .observations, .materials, .reflections {
+            padding: 50px 0;
+            background-color: #ffe4e1;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about img {
+            float: left;
+            width: 30%;
+            margin-right: 30px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content {
+            float: left;
+            width: 65%;
+            text-align: justify;
+        }
+        .FS-Content{
+            text-align: justify;
+        }
+        .reflection-content{
+            text-align: justify;
+        }
+        /* Clearfix */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Resume Section */
+        .resume-list ul {
+            list-style: none;
+        }
+
+        .resume-list li {
+            background: #f4f4f4;
+            margin-bottom: 10px;
+            padding: 20px;
+            border-left: 5px solid #ff69b4;
+            transition: 0.3s;
+        }
+
+        .resume-list li:hover {
+            background-color: #ff1493;
+        }
+
+        /* Seminars and Certificates Section */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            border-radius: 8px;
+            transition: 0.3s;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Classroom Observations Section */
+        .accordion {
+            background-color: #ff69b4;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .active, .accordion:hover {
+            background-color: #ff1493;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: #ffe4e1;
+            overflow: hidden;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ff69b4;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+        }
